@@ -722,6 +722,7 @@
 
     <!-- Main content -->
     <section class="content">
+      @yield('content')
 
       <!-- Default box -->
       <div class="card">
@@ -766,7 +767,7 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
+@stack('scripts')
 <!-- jQuery -->
 <script src="{{ asset('/adminlte/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
